@@ -4,7 +4,6 @@ function pauseSorting() {
     isSortingPaused = !isSortingPaused;
 }
 
-
 const container = document.querySelector(".data-container"); 
 
 // function to generate bars 

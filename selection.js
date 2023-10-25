@@ -7,7 +7,7 @@ async function SelectionSort(delay = 100) {
     // Assign 0 to min_idx 
     var min_idx ; 
     for (var i = 0; i < bars.length; i += 1) { 
-        if (isSortingPaused) return;
+        
         min_idx = i; 
         bars[i].style.backgroundColor = " rgb(255, 7, 115)"; 
         for (var j = i + 1; j < bars.length; j += 1) { 
@@ -16,10 +16,9 @@ async function SelectionSort(delay = 100) {
             
 
         await new Promise((resolve) => 
-            setTimeout(() => { 
-                resolve(); 
-                }, 200) 
+            setTimeout(() => {resolve(); }, 150) 
         ); 
+        if (isSortingPaused) return;
         var val1 = parseInt(bars[j].childNodes[0].innerHTML);  
         var val2 = parseInt(bars[min_idx].childNodes[0].innerHTML); 
 
@@ -47,7 +46,7 @@ async function SelectionSort(delay = 100) {
 
         setTimeout(() => { 
             resolve(); 
-        },300) 
+    },150) 
     
         ); 
 

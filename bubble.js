@@ -14,10 +14,11 @@ function swap(bar1, bar2) {
 }
 
 async function bubbleSort(delay = 100) {
+    updateAlgorithmDetails("bubbleSort");
     let blocks = document.querySelectorAll(".bar");
 
     for (var i = 0; i < blocks.length; i += 1) {
-        // if (isSortingPaused) return;
+       
         for (var j = 0; j < blocks.length - i - 1; j += 1) {
             blocks[j].style.backgroundColor = " rgb(255, 7, 115)";
             blocks[j + 1].style.backgroundColor = "red";

@@ -1,21 +1,19 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 
-<!-- head -->
 <head> 
 	<meta charset="UTF-8" /> 
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0" /> 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
 	
-	<!-- title -->
+
 	<title>Sorting Visualizer</title> 
 
-	<!-- linking style.css -->
 	<link href="style.css" rel="stylesheet" /> 
 </head> 
 
-<!-- body -->
+
 <body > 
 <section id="heading"> 
 	<div ><h1 class="title">SORTING VISUALIZER </h1>
@@ -24,13 +22,18 @@
 	</div>
 </section> 
 
-	
-<!-- "Generate New Array" button -->
+
+
+<div id="algorithmDetails">
+	<h2>Algorithm Details</h2>
+	<p id="algorithmDescription"></p>
+</div>
+
+
 	<button id="button1" class="btn1" 
 	onclick="generate()" > 
 	Get Random Array</button> 
-	
-<!-- "Selection Sort" button -->
+
 	<button id="button2" class="btn2"
 	onclick="SelectionSort()"  > 
 	Selection Sort</button> 
@@ -40,21 +43,33 @@
 	Bubble Sort
 	</button>
 
-	<!-- Pause button -->
+	<button id="button5" class="btn2" onclick="quickSort()">
+		Quick Sort
+	</button>
+
+	<button id="button6" class="btn2" onclick="insertionSort()">
+		Insertion Sort
+	</button>
+	
+
 	<button id="pauseButton" class="btn2" onclick="pauseSorting()">
 		Pause
 	</button>
 
+	
 	
 
 
 
 	<section class="data-container"></section> 
 
-	<!-- linking index.js -->
+
 	<script src="generatearr.js"></script> 
 	<script src="selection.js"></script>
 	<script src="bubble.js"></script>
+	<script src="quick.js"></script>
+	<script src="insert.js"></script>
+
 	</body> 
 
 

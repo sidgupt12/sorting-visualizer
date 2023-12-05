@@ -9,41 +9,49 @@
 body { 
 	background-color: black; 
 	font-family: 'Poppins', sans-serif;
-	/* font-family: Verdana, sans-serif;  */
+	
+	margin: 0;
+	
 } 
 
-/* #heading { 
-	margin-top: 20px; 
-	margin-right: 0vw; 
-	margin-left: 0vw; 
-	margin-bottom: 0%;
-	text-align: center; 
-	font-size: 30px; 
-	background-color: black; 
-	color: rgb(105, 239, 87); 
-	border-radius: 19px;  
-	font-weight: bolder; 
-}   */
 
 #heading{
-	#profile{
+	/* #profile{
 		display: flex;
 		justify-content: center;
 		gap: 5rem;
 		height: 80vh;
-	}
+	} */
+	flex: 1;
+    padding: 20px;
+	
+	
+}
+#algorithmDetails {
+	
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	position: absolute;
 }
 
+
+
 .title{
+	margin-top: 0;
     font-size: 3rem;
     text-align: center;
     color: rgb(54, 184, 76);
 	margin-bottom: -1rem;
+
 }
 
 .NAME__{
+	margin-top: 1;
     font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 
     color: grey;
 	text-align: center;
@@ -51,12 +59,16 @@ body {
 } 
 
 .data-container { 
-	width: 600px; 
-	/* height: 384px;  */
+	/* width: 600px; 
 	height: 384px;
 	position: relative;
 	margin: 0 auto;
 	margin-left: 22vw; 
+	 */
+	 flex: 1;
+	 height: 384px;
+	 position: relative;
+	 margin-left: 250px;
 } 
 
 .bar { 
@@ -65,12 +77,13 @@ body {
 	position: absolute; 
 	left: 1; 
 	bottom: 0; 
+	margin-left: 8vh;
 	
-	margin-top: 5vh;
+	/* margin-top: 5vh; */
 	background-color: rgb(122, 45, 176);
-	/* background-color: rgb(0, 183, 255);  */
+	
 	transition: 0.2s all ease; 
-	/* background-color: rgb(255, 7, 115); */
+	
 } 
 
 
@@ -85,11 +98,12 @@ body {
 	padding: 12px; 
 	font-weight: bolder; 
 	background-color: black; 
-	/* border-radius: 10px;  */
+	
 	color: grey; 
 	font-size: 16px; 
 	border: white; 
-	margin-left: 35vw; 
+	/* margin-left: 35vw;  */
+	margin-left: 25vw; 
 	margin-bottom: 15vh;
 	
 	text-decoration: underline;
@@ -100,7 +114,6 @@ body {
 
 .btn1:hover{
 	cursor: pointer;
-	/* background-color: rgba(222, 241, 198, 0.336); */
 	color: rgb(54, 184, 76);
 	text-underline-offset: 1.5vh;
 	transition: all 200ms ease;
@@ -123,7 +136,7 @@ body {
 
 .btn2:hover{
 	cursor: pointer;
-	/* background-color: rgba(222, 241, 198, 0.336); */
+	
 	color: rgb(54, 184, 76);
 	text-underline-offset: 1.5vh;
 	transition: all 200ms ease;

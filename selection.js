@@ -1,10 +1,11 @@
 
 
 
-// asynchronous function to perform "Selection Sort" 
+
 async function SelectionSort(delay = 100) { 
+    updateAlgorithmDetails("selectionSort");
     let bars = document.querySelectorAll(".bar"); 
-    // Assign 0 to min_idx 
+    
     var min_idx ; 
     for (var i = 0; i < bars.length; i += 1) { 
         
@@ -56,7 +57,7 @@ async function SelectionSort(delay = 100) {
     } 
     
 }
-    // function to generate new random array 
+    
     function generate() 
     { 
     window.location.reload(); 
